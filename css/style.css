@@ -118,3 +118,51 @@ a {
 .navbar ul li a.current:hover {
   color: var(--main-color);
 }
+
+
+/* banner home */ 
+
+.banner-header {
+  height: 60vh; /*60% del la altura del view port*/
+  width: 100% ;
+  overflow: hidden;
+  background: rgb(88, 37, 194);
+  background:  linear-gradient(
+    45deg,
+    rgba(88,37,194,0.4)36%,
+    rgba(208,25,207,0.4)100%
+
+  ),
+  url("..//img/developer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-header-text {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  place-content: center;
+
+}
+
+.banner-title span {
+  color: var(--primary-color);
+
+}
+
+.btn{
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
