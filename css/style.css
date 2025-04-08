@@ -12,7 +12,7 @@
 }
 /* Main styling */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--secondary-color);
   line-height: 1.7em;
   background-color: var(--main-color);
@@ -58,7 +58,7 @@ a {
   letter-spacing: 3px;
 }
 .title:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 90px;
   height: 5px;
@@ -119,21 +119,19 @@ a {
   color: var(--main-color);
 }
 
-
-/* banner home */ 
+/* banner home */
 
 .banner-header {
   height: 60vh; /*60% del la altura del view port*/
-  width: 100% ;
+  width: 100%;
   overflow: hidden;
   background: rgb(88, 37, 194);
-  background:  linear-gradient(
-    45deg,
-    rgba(88,37,194,0.4)36%,
-    rgba(208,25,207,0.4)100%
-
-  ),
-  url("..//img/developer.jpg");
+  background: linear-gradient(
+      45deg,
+      rgba(88, 37, 194, 0.4) 36%,
+      rgba(208, 25, 207, 0.4) 100%
+    ),
+    url('..//img/developer.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -146,15 +144,13 @@ a {
   text-align: center;
   display: grid;
   place-content: center;
-
 }
 
 .banner-title span {
   color: var(--primary-color);
-
 }
 
-.btn{
+.btn {
   padding: 10px;
   background-color: var(--primary-color);
   border: none;
@@ -165,4 +161,71 @@ a {
 
 .btn:hover {
   background-color: var(--secondary-color);
+}
+
+/*proyectos home*/
+
+.portfolio h3 {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centra verticalmente */
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 15px;
+  height: auto;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.card-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+/* hireme*/
+
+.hireme {
+  text-align: center;
+}
+
+.main-footer p {
+  float: left;
+}
+
+.main-footer ul {
+  float: right;
+  list-style: none;
+}
+
+.main-footer ul li i {
+  color: var(--primary-color);
+}
+
+.main-footer ul li {
+  float: left;
+}
+.main-footer ul li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
 }
