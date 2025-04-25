@@ -16,6 +16,7 @@ body {
   color: var(--secondary-color);
   line-height: 1.7em;
   background-color: var(--main-color);
+  padding-top: 80px; /* Ajusta este valor según la altura del navbar */
 }
 hr {
   border: 0.5px solid var(--secondary-color);
@@ -79,7 +80,7 @@ a {
   background-color: var(--main-color);
   width: 100%;
   overflow: hidden;
-  z-index: 5;
+  z-index: 10; /* Asegúrate de que el navbar esté por encima del contenido */
 }
 .nav-container {
   margin: auto;
@@ -200,6 +201,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   justify-content: center;
+  margin-top: 20px; /* Espacio adicional entre el navbar y las tarjetas */
 }
 
 /* hireme*/
@@ -228,4 +230,214 @@ a {
   display: block;
   padding: 10px;
   text-align: center;
+}
+
+/* contacto/*
+
+/* Contact */
+.card-info {
+  display: grid; /* Define el contenedor como una cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio de 20px entre filas y columnas */
+  text-align: center;
+}
+
+.form-map {
+  margin: 30px;
+  display: grid; /* Define el contenedor como una cuadrícula */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  gap: 20px;
+}
+
+.form-map iframe {
+  height: 400px;
+  width: 100%;
+}
+
+.box-form .input-form {
+  margin-bottom: 20px;
+}
+
+.box-form input,
+.box-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px var(--secondary-color) solid;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.box-form input:focus,
+.box-form textarea:focus {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.box-form textarea {
+  height: 200px;
+}
+.box-form input:focus,
+.box-form textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.box-form button {
+  width: 100%;
+}
+
+/* 
+estilos del poryecto 1 */
+
+.proyectos-cards {
+  display: flex;
+  gap: 20px;
+  background-color: #4a5568;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.description-projecto {
+  flex: 1;
+  padding: 10px;
+}
+
+.description-projecto h3 {
+  color: rgba(196, 126, 196, 0.8);
+  text-decoration: underline;
+}
+
+.description-projecto p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.imagen-proyecto img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.imagen-proyecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.imagen-proyecto3 img {
+  display: flex;
+
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.imagen-proyecto3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.tech-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.tech-icons img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tech-icons .Django-icon,
+.icon-mariadb,
+.icon-Vue {
+  background-color: #b2c4c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  border: #191c32 2px solid;
+}
+
+.about-me-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #92b0d3;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.about-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.about-content h2 {
+  color: var(--primary-color);
+  text-decoration: dashed underline;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  text-align: justify;
+  line-height: 1.6;
+  color: #030303;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 15%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-skills {
+  flex: 1;
+  padding: 10px;
+}
+
+.about-skills h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.about-skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-skills ul li {
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: bold;
 }
